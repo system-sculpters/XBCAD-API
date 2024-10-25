@@ -1,0 +1,89 @@
+POST http://localhost:3001/api/auth/signup HTTP/1.1
+content-type: application/json
+
+{
+    "fullName": "admin",
+    "phoneNumber": "0000000000",
+    "email": "admin@fglatto.com",
+    "password": "admin123"
+}
+
+
+###
+POST http://localhost:3001/api/auth/signin HTTP/1.1
+content-type: application/json
+
+{
+    "fullName": "agent2 agent",
+    "email": "admin@fglatto.com",
+    "password": "admin123"
+} 
+
+
+###
+POST http://localhost:3001/api/auth/signin HTTP/1.1
+content-type: application/json
+
+{
+    "fullName": "agent2 agent",
+    "email": "user@gmail.com",
+    "password": "user"
+} 
+###
+GET https://xbcad7319-api.onrender.com/api/chat/tUhnzuIRJiUJOePZpxEUR9pSb252 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJ0VWhuenVJUkppVUpPZVBacHhFVVI5cFNiMjUyIiwiZW1haWwiOiJhZ2VudDJAZ21haWwuY29tIiwicm9sZSI6ImFnZW50IiwiaWF0IjoxNzI5MzAyNjUzLCJleHAiOjE3Mjk1NjE4NTN9.POoj1_l7HlhCJnph08QP3dkhSeEsrCVRq_LZvJrBqX8
+
+###
+GET  http://localhost:3001/api/property?userId=H6IIUSfcivgzGZsEGSMQer8mZUv2 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJ0VWhuenVJUkppVUpPZVBacHhFVVI5cFNiMjUyIiwiZW1haWwiOiJhZ2VudDJAZ21haWwuY29tIiwicm9sZSI6ImFnZW50IiwiaWF0IjoxNzI5MjczNzU3LCJleHAiOjE3Mjk1MzI5NTd9.HLIb6yyDWAICFRb212BEDCXpUpog82FRffYanaIjDpI
+
+###
+POST http://localhost:3001/api/property/create HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJ0VWhuenVJUkppVUpPZVBacHhFVVI5cFNiMjUyIiwiZW1haWwiOiJhZ2VudDJAZ21haWwuY29tIiwicm9sZSI6ImFnZW50IiwiaWF0IjoxNzI5MjczNzU3LCJleHAiOjE3Mjk1MzI5NTd9.HLIb6yyDWAICFRb212BEDCXpUpog82FRffYanaIjDpI
+content-type: application/json
+
+{
+    "title": "Beautiful Family House",
+    "price": 300000,
+    "type": "buy house",
+    "location": {
+        "address": "123 Elm Street, Springfield, IL",
+        "latitude": 39.7994,
+        "longitude": -89.6501
+    },
+    "rooms": 4,
+    "bathrooms": 2,
+    "parking": 2,
+    "size": 2500,
+    "description": "A spacious family house with a beautiful garden and modern amenities.",
+    "agentId": "tUhnzuIRJiUJOePZpxEUR9pSb252" 
+}
+
+
+###
+POST http://localhost:3001/api/bookmark/cVySmaqNYhCxMHUhYTUG HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJ0VWhuenVJUkppVUpPZVBacHhFVVI5cFNiMjUyIiwiZW1haWwiOiJhZ2VudDJAZ21haWwuY29tIiwicm9sZSI6ImFnZW50IiwiaWF0IjoxNzI5MjczNzU3LCJleHAiOjE3Mjk1MzI5NTd9.HLIb6yyDWAICFRb212BEDCXpUpog82FRffYanaIjDpI
+content-type: application/json
+
+{
+    "userId": "H6IIUSfcivgzGZsEGSMQer8mZUv2"
+}
+
+###
+DELETE http://localhost:3001/api/bookmark/cVySmaqNYhCxMHUhYTUG HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJ0VWhuenVJUkppVUpPZVBacHhFVVI5cFNiMjUyIiwiZW1haWwiOiJhZ2VudDJAZ21haWwuY29tIiwicm9sZSI6ImFnZW50IiwiaWF0IjoxNzI5MjczNzU3LCJleHAiOjE3Mjk1MzI5NTd9.HLIb6yyDWAICFRb212BEDCXpUpog82FRffYanaIjDpI
+content-type: application/json
+
+{
+    "userId": "H6IIUSfcivgzGZsEGSMQer8mZUv2"
+}
+
+
+###
+DELETE  http://localhost:3001/api/category/tUhnzuIRJiUJOePZpxEUR9pSb252 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJ0VWhuenVJUkppVUpPZVBacHhFVVI5cFNiMjUyIiwiZW1haWwiOiJhZ2VudDJAZ21haWwuY29tIiwicm9sZSI6ImFnZW50IiwiaWF0IjoxNzI5MjczNzU3LCJleHAiOjE3Mjk1MzI5NTd9.HLIb6yyDWAICFRb212BEDCXpUpog82FRffYanaIjDpI
+
+
+###
+GET  http://localhost:3001/api/analytics HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIyc0kxZHVBbzkyWmFNVmN6Zk9ZSkdUNWJIVHIyIiwiZW1haWwiOiJhZG1pbkBmZ2xhdHRvLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcyOTY0MTc0NSwiZXhwIjoxNzI5OTAwOTQ1fQ.EI1N2CISNfF4OSKBBcDb6fjyBtO58lHnVK5eppfnMVg

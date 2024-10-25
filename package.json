@@ -1,0 +1,18 @@
+{
+  "name": "XBCAD7319-API",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/system-sculpters/XBCAD7319-API.git",
+  "author": "ST10215069-Nkosinathi-Ngozo <ST10215069@vcconnect.edu.za>",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "firebase": "8.6.8",
+    "firebase-admin": "^12.6.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.7"
+  }
+}
